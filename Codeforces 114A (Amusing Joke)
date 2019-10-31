@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+
+    string a , b, c,i ;
+    int len1 , len2;
+    cin>>a>>b>>c;
+    len1 = a.length();
+    len1+=b.length();
+    len2 = c.length();
+    if(len1 != len2)
+    {
+
+        cout<<"NO"<<endl;
+        return 0;
+    }
+    else
+    {
+         a = a+b;
+        sort(a.begin(), a.end());
+        sort(c.begin(), c.end());
+        if(a != c)
+        {
+            cout<<"NO"<<endl;
+        }
+        else
+        {
+            cout<<"YES"<<endl;
+        }
+    }
+
+}
