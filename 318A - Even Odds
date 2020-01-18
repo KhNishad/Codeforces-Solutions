@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+
+    long long n, k,pos=0;
+    cin>>n>>k;
+    if(n%2==0)
+    {
+        pos = n/2;
+    }
+    else{
+        pos = (n/2)+1;
+    }
+    if(k<=pos)
+    {
+        cout<< (2*k)-1<<endl;
+    }
+    else{
+        cout<<(k-pos)*2<<endl;
+    }
+}
