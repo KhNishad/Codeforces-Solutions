@@ -1,0 +1,33 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+    int m , cnt=0;
+    char n[20];
+    cin>>m;
+    for(int i=0;i<m;i++)
+    {
+       cin>>n;
+        if(n[0] == 'T')
+        {
+            cnt = cnt+4;
+        }
+        else if(n[0] == 'C')
+        {
+            cnt = cnt+6;
+        }
+        else if(n[0] == 'O')
+        {
+            cnt = cnt + 8;
+        }
+        else if(n[0] == 'D')
+        {
+            cnt = cnt+12;
+        }
+        else if(n[0] == 'I'){
+            cnt = cnt + 20;
+        }
+    }
+    cout<<cnt<<endl;
+}
