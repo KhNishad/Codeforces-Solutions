@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int  t;
+    cin>>t;
+    while(t>0)
+    {
+
+        int  n ,  m, ans = 0 ;
+        cin>>n>>m;
+        if(n == 1){
+            ans = 0;
+        }
+          if(n==2){
+           ans = m;
+        }
+        if(n>=3){
+           ans = m*2;
+        }
+        cout<<ans<<endl;
+        t--;
+    }
+
+}
